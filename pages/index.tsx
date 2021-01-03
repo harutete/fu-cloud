@@ -1,13 +1,8 @@
-import Layout from '../components/Layout'
+import HomeComponent from '../components/Home'
+import { auth } from '../src/common/firebase'
 
-const Home = () => (
-  <Layout title="ホーム">
-    <main>
-      <h1>
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
-      </h1>
-    </main>
-  </Layout>
-)
+const Home: React.FC = () => {
+  return <HomeComponent />
+}
 
 export default Home
