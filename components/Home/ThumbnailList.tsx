@@ -17,20 +17,16 @@ const ListItemImage = styled.div`
 `
 
 // TODO データ仮入れなのでfetchできるようになったら直す
-const ThumbnailList: React.FC = () => (
-  <List>
-    <li>
-      <ListItemImage />
-    </li>
-    <li>
-      <ListItemImage />
-    </li>
-    <li>
-      <ListItemImage />
-    </li>
-    <li>
-      <ListItemImage />
-    </li>
-  </List>
-)
+const ThumbnailList: React.FC = () => {
+  const tempArray = ['a', 'b', 'c', 'd', 'e']
+  return (
+    <List>
+      {tempArray.map((temp, index) =>
+        <li key={`${temp}_${index}`}>
+          <ListItemImage />
+        </li>
+      )}
+    </List>
+  )
+}
 export default ThumbnailList
