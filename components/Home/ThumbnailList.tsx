@@ -15,6 +15,8 @@ const ListItemImage = styled.div`
   width: 200px;
   height: 200px;
 `
+
+// TODO データ仮入れなのでfetchできるようになったら直す
 const ThumbnailList: React.FC = () => (
   <List>
     <li>
