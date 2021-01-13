@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Layout from '../common/Layout'
 import ThumbnailList from './ThumbnailList'
+import styled from '@emotion/styled'
 
 const HomeComponent: React.FC = () => (
   <Layout title="ホーム">
